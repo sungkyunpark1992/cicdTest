@@ -6,13 +6,13 @@ on:
 
 env:
   PROJECT_NAME: cicd_project
-  BUCKET_NAME: kbsat-cicd-bucket
+  BUCKET_NAME: test-cicd-psk
   CODE_DEPLOY_APP_NAME: cicdapp
   DEPLOYMENT_GROUP_NAME: cicdapp_deploy
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
