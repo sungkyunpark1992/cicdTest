@@ -2,7 +2,13 @@ name: Build and Deploy Spring Boot to AWS EC2
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - main
+      - master
+      - test
+
+    
+    
 
 env:
   PROJECT_NAME: cicd_project
