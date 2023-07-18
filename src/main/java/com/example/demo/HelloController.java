@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
     @GetMapping("/hello")
-    @CrossOrigin()
+//    @CrossOrigin()
     public String hello(){
         return "CICD Hello world";
     }
